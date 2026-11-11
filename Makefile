@@ -54,14 +54,6 @@ fclean: clean
 re: fclean
 	@$(MAKE) --no-print-directory all
 
-test: bonus
-	@python3 tests/test_nm.py
-
-test-memory: bonus
-	@python3 tests/test_memory.py
-
 -include $(OBJS:.o=.d) $(BONUS_OBJS:.o=.d)
 
-FORCE:
-
-.PHONY: all bonus clean fclean re test test-memory FORCE
+.PHONY: all bonus clean fclean re

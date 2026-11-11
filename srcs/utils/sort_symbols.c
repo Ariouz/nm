@@ -15,7 +15,6 @@ static int  compare_symbols(const t_symbol *left, const t_symbol *right,
     return (result);
 }
 
-/* Stable merge sort: bounded stack depth and O(n log n), even for hostile input. */
 static void merge_sort(t_symbol *items, t_symbol *scratch, size_t size,
                 const t_opts *opts)
 {
