@@ -8,7 +8,7 @@ void    init_cli_options(t_opts *opts)
 void    print_help(void)
 {
     printf("Usage: ft_nm [options] [files...]\n");
-    printf("Display ELF symbols (default file: a.out).\n");
+    printf("Display ELF symbols\n");
 #ifdef BONUS
     printf("Options:\n");
     printf("    -a    Display all symbols, including debug symbols\n");

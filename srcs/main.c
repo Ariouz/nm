@@ -19,8 +19,8 @@ int main(int argc, char **argv)
     status = 0;
     index = 0;
     if (opts.size == 0) {
-        if (opts.files) free(opt.files);
-        printf("A file is required");
+        if (opts.files) free(opts.files);
+        printf("A file is required\n");
         return 1;
     }
     while (index < opts.size)

@@ -25,7 +25,7 @@ INCLUDES= -Iincludes/
 
 all: $(NAME)
 
-$(NAME): .build/mandatory/$(NAME) FORCE
+$(NAME): .build/mandatory/$(NAME)
 	@if ! cmp -s $< $(NAME); then cp $< $(NAME); fi
 
 .build/mandatory/$(NAME): $(OBJS)
